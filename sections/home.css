@@ -154,24 +154,34 @@
     }
 
     .home-call-to-action {
+
         width : 80%;
-        height : 50%;
+        height : 30%;
 
         padding : 0;
         align-items: center;
         justify-content: flex-end;
     }
 
+    .home-visual-container {
+        height : 70%;
+    }
+
     .home-call-to-action h1 {
-        font-size : 30px;
+        font-size : 20px;
         text-align: center;
     }
 
     .home-call-to-action h3 {
-        font-size : 20px;
+        font-size : 15px;
+        margin : 0;
+    }
+
+    .home-call-to-action button {
+        transform: scale(0.6);
     }
 
     .home-visual-container > * {
-        transform: scale(0.8);
+        transform: scale(0.75);
     }
 }
