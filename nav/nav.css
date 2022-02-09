@@ -5,13 +5,10 @@
     width : 100%;
     height : var(--nav-height);
 
-    padding : 0 40px;
-
     background : rgba(0,0,0,0);
 
     z-index : 1;
 }
-
 
 
 .desktop-nav .logo-container {
@@ -28,6 +25,7 @@
 
 .logo-container {
     width: 40%;
+    padding-left : 40px;
 }
 
 .desktop-nav .logo-container h1 {
@@ -39,6 +37,8 @@
     list-style : none;
     width : 100%;
     justify-content: flex-end;
+
+    padding-right : 40px;
 }
 
 .desktop-nav ul li {
@@ -53,10 +53,24 @@
     color : var(--dark);
 }
 
+.desktop-nav ul li a.is-scrolled {
+    text-decoration : none;
+    text-transform: uppercase;
+    font-weight : 400;
+    color : var(--light);
+}
+
 
 .desktop-nav ul li a:hover, .desktop-nav ul li .is-active {
     text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+.desktop-nav.is-scrolled  {
+    background-color: var(--dark);
+    color : var(--light);
+
+    transition: 0.5s;
 }
 
 .hamburger {
@@ -71,6 +85,8 @@
     outline : none;
     background : none;
 
+    padding-right : 40px;
+
     cursor : pointer;
 }
 
@@ -81,7 +97,7 @@
     margin-bottom : 5px;
     position : relative;
 
-    background-color: var(--dark);
+    background-color: var(--light);
     border-radius: 6px;
     z-index : 1;
 
@@ -91,7 +107,7 @@
 
 .hamburger:hover span:nth-child(2) {
     transform: translateX(10px);
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .hamburger.is-active span:nth-child(1) {
@@ -109,7 +125,7 @@
 }
 
 .hamburger.is-active:hover span {
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 
@@ -162,6 +178,11 @@
 @media(max-width : 768px) {
     .hamburger {
         display : block;
+        width : 10%;
+    }
+
+    .logo-container {
+        width : 90%;
     }
 
     .desktop-nav {
