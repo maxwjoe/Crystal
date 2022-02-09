@@ -5,6 +5,9 @@
     width : 100%;
     height : var(--nav-height);
 
+    justify-content: center;
+    align-items: center;
+
     background : rgba(0,0,0,0);
 
     z-index : 1;
