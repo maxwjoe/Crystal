@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --light : #fffbf5;
+    --light-select : rgb(250, 245, 237);
+    --dark : #181818;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+    
+}
