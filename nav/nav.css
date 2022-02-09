@@ -30,5 +30,6 @@
 }
 
 .desktop-nav ul li a:hover {
-    color: var(--light-select);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
