@@ -84,8 +84,8 @@
 
 
 .iphone-outline {
-    min-width : 290px;
-    min-height : 628px;
+    min-width : 289px;
+    min-height : 590px;
 
     border-radius : 50px;
 
@@ -99,8 +99,8 @@
 }
 
 .iphone-screen {
-    min-width : 260px;
-    min-height : 598px;
+    min-width : 259px;
+    min-height : 560px;
 
     border-radius: 30px;
 
@@ -110,7 +110,9 @@
     justify-content: space-between;
 
 
-    background-color: white;
+    background-image : url('../resources/app.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .iphone-notch {
