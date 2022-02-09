@@ -28,6 +28,10 @@
     padding-left : 40px;
 }
 
+.logo-container h1 {
+    cursor : pointer;
+}
+
 .desktop-nav .logo-container h1 {
     text-transform: uppercase;
 }
@@ -61,10 +65,12 @@
 }
 
 
-.desktop-nav ul li a:hover, .desktop-nav ul li .is-active {
+.desktop-nav ul li a:hover, .desktop-nav ul li a.is-active {
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-decoration-color: var(--light);
 }
+
 
 .desktop-nav.is-scrolled  {
     background-color: var(--dark);

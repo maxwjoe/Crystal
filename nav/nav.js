@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobile_menu = document.querySelector('.mobile-nav');
 const desktop_nav = document.querySelector('.desktop-nav');
+const logo = document.querySelector('.logo-container h1');
 
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.container .desktop-nav ul li a');
@@ -8,7 +9,12 @@ const navLi = document.querySelectorAll('.container .desktop-nav ul li a');
 const mobile_thresh = 768;
 
 
-//open and close mobile menu
+
+//return to top on logo click
+logo.addEventListener('click', function () {
+    window.scrollTo(0,0);
+})
+
 
 //Enables hamburger functionality
 hamburger.addEventListener('click', function () {
