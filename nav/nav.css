@@ -103,12 +103,16 @@
     margin-bottom : 5px;
     position : relative;
 
-    background-color: var(--light);
+    background-color: var(--dark);
     border-radius: 6px;
     z-index : 1;
 
     transform-origin: 0 0;
     transition: 0.4s;
+}
+
+.hamburger span.is-scrolled {
+    background-color: var(--light);
 }
 
 .hamburger:hover span:nth-child(2) {

@@ -1,4 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
+const span = document.querySelectorAll('.hamburger span');
 const mobile_menu = document.querySelector('.mobile-nav');
 const desktop_nav = document.querySelector('.desktop-nav');
 const logo = document.querySelector('.logo-container h1');
@@ -46,12 +47,17 @@ window.addEventListener('scroll', function () {
     navLi.forEach(li => {
         li.classList.remove('is-scrolled');
     })
+    span.forEach(s => {
+        s.classList.remove('is-scrolled');
+    })
     
     if(scrollTop > 0) {
         desktop_nav.classList.add('is-scrolled');
-        
         navLi.forEach(li => {
             li.classList.add('is-scrolled');
+        })
+        span.forEach(s => {
+            s.classList.add('is-scrolled');
         })
     }
 
