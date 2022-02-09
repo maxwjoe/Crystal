@@ -3,7 +3,7 @@
     top : 0;
     display : flex;
     width : 100%;
-    height : 60px;
+    height : var(--nav-height);
 
     padding : 0 40px;
 
@@ -12,14 +12,22 @@
     z-index : 1;
 }
 
+
+
 .desktop-nav .logo-container {
     height : 100%;
-    width : 40%;
-
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.desktop-nav {
+    width : 100%;
+}
+
+.logo-container {
+    width: 40%;
 }
 
 .desktop-nav .logo-container h1 {
@@ -49,4 +57,72 @@
 .desktop-nav ul li a:hover, .desktop-nav ul li a.is-active {
     text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+.hamburger {
+    display: none;
+    position : relative;
+    z-index : 1;
+
+
+    user-select: none;
+    appearance: none;
+    border : none;
+    outline : none;
+    background : none;
+
+    cursor : pointer;
+}
+
+.hamburger span {
+    display: block;
+    width : 33px;
+    height : 4px;
+    margin-bottom : 5px;
+    position : relative;
+
+    background-color: var(--dark);
+    border-radius: 6px;
+    z-index : 1;
+
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--dark);
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform : translate(0px, -2px) rotate(45deg);
+}
+
+
+.hamburger.is-active span:nth-child(3) {
+    transform : translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.is-active:hover span {
+    background-color: var(--primary);
+}
+
+
+@media(max-width : 768px) {
+    .hamburger {
+        display : block;
+    }
+
+    .desktop-nav {
+      justify-content: space-between;
+    }
+
+    .desktop-nav ul {
+        display: none;
+    }
 }

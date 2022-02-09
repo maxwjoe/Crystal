@@ -2,11 +2,14 @@
 
 
 :root {
+    --accent : rgb(180, 255, 111);
     --light : #fffbf5;
     --light-select : rgb(250, 245, 237);
 
     --dim : rgb(41, 39, 35);
     --dark : #181818;
+
+    --nav-height : 60px;
 }
 
 html {
