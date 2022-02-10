@@ -13,7 +13,7 @@
 }
 
 .about-heading {
-    font-size : 40px;
+    font-size : var(--heading-font-desktop);
     height : 20%;
 }
 
