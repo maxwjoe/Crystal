@@ -13,5 +13,5 @@ learn_more_button.addEventListener('click', function () {
 
     const sectionTop = about_section.offsetTop;
 
-    window.scrollTo(0,sectionTop - 0.09 * view[1]);
+    window.scrollTo(0,sectionTop);
 })
