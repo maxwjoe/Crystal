@@ -16,7 +16,7 @@
 
 .careers-container .career-list-container {
     width : 70%;
-    height : 50%;
+    height : 60%;
 
     display: flex;
     justify-content: center;
@@ -28,4 +28,13 @@
     border-radius : 10px;
     border : 3px solid var(--dark);
     background-color: var(--light);
+}
+
+
+@media(max-width : 768px) {
+
+    .careers-container h3 {
+        font-size : 15px;
+    }
+
 }

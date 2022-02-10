@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
 
+
     padding : 100px;
 
 }
@@ -59,13 +60,18 @@
 
 @media(max-width : 900px) {
 
-        
+    
+    .features-container {
+        padding : 20px;
+    }
+
     .features-container h1 {
-        font-size : 30px;     
+        font-size : 30px;
     }
         
     .features-wrapper {
         flex-direction: column;
+
 
         height : 90%;
     }
@@ -89,5 +95,9 @@
         display : none;
     }
 
+
+}
+
+@media(max-width : 500px) {
 
 }
